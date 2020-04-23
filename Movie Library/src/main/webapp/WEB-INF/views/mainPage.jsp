@@ -39,9 +39,16 @@
   </div>
   <button type="submit" class="btn btn-primary mb-2">Search</button>
 </form:form>
+
 </div>
 
 <hr>
+
+<c:if test="${empty movies}">
+ <label class="alert alert-warning">No Data Available.</label>
+</c:if>
+
+<c:if test="${not empty movies}">
 
 <div class="container">
   <h2>Movies</h2>            
@@ -74,7 +81,7 @@
     </tbody>
   </table>
 </div>
-
+</c:if>
 
 </body>
 </html>

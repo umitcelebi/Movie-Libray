@@ -21,7 +21,7 @@
 <div class="container">
 
 <c:if test="${empty roles}">
- Kayıt yok.
+ <label class="alert alert-warning">No Data Available.</label>
  
  </c:if>
  

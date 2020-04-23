@@ -71,6 +71,12 @@ public class MovieAddController {
 		List<Movie> movies=movieService.movieByGenre(genre);
 		return new ModelAndView("mainPage","movies",movies);
 	}
+
+	@RequestMapping(value = "moviebyactor",method = RequestMethod.GET)
+	public ModelAndView movieByActor(@RequestParam String actorName,@ModelAttribute Movie movie) {
+		List<Movie> movies=movieService.movieByActor(actorName);
+		return new ModelAndView("mainPage","movies",movies);
+	}
 	
 	@RequestMapping(value = "orderbyyear",method = RequestMethod.GET)
 	public ModelAndView orderByYear(@ModelAttribute Movie movie) {

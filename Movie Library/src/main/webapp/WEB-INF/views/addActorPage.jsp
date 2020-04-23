@@ -94,7 +94,11 @@
 	
 </div>
 
+<c:if test="${empty actors}">
+ <label class="alert alert-warning">No Actor Available.</label>
+</c:if>
 
+<c:if test="${not empty actors}">
 <div class="container">
 
 <div class="container">
@@ -121,7 +125,7 @@
 
 </div>
 
-
+</c:if>
 
 </body>
 </html>
