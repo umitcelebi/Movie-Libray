@@ -22,14 +22,16 @@
  	<div class="form-group">
       <label class="control-label col-sm-2" for="userName">Username</label>
       <div class="col-sm-10">
-        <form:input path="userName" class="form-control" id="userName" placeholder="Enter username" name="userName"/>
+        <form:input path="userName" class="form-control" id="userName" 
+        placeholder="Enter username" name="userName" required="required"/>
       </div>
     </div>
 	
 	<div class="form-group">
       <label class="control-label col-sm-2" for="pwd">Password</label>
       <div class="col-sm-10">          
-        <form:password path="password" class="form-control" id="password" placeholder="Enter password" name="password"/>
+        <form:password path="password" class="form-control" id="password" 
+        placeholder="Enter password" name="password" required="required"/>
       </div>
     </div>
     
